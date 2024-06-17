@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: end;
+  padding: 0 8rem;
+  padding-top: 13rem;
+}
+
+.left {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left h1 {
+  font-size: 11rem;
+  line-height: 8rem;
+  font-weight: 500;
+}
+
+.left .bottom {
+  width: fit-content;
+  border: 1px solid black;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.circle-container {
+  display: flex;
+  gap: 4px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.bottom p {
+  font-size: 1.2rem;
+}
+
+.brown-circle {
+  background-color: rgb(190, 92, 92);
+}
+
+.black-circle {
+  background-color: black;
+}
+
+.details {
+  width: 70%;
+  margin: 2rem 0;
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+}
+
+.right {
+  width: 35%;
+  height: 90%;
+  position: relative;
+}
+
+.right .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.top h4 {
+  font-size: 2rem;
+}
+
+.top h5 {
+  font-size: 1rem;
+  padding-right: 20px;
+}
+
+.right img {
+  width: 100%;
+  height: 92%;
+  object-fit: cover;
+}
+
+.black-box {
+  position: absolute;
+  right: -10%;
+  top: 25%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-box h5 {
+  color: rgb(150, 149, 149);
+  font-size: 1.5rem;
+}
+
+.rotate-text {
+  font-size: 3rem;
+  position: absolute;
+  transform-origin: 0 0;
+  left: -15%;
+  bottom: 10%;
+  rotate: -90deg;
+}
+
+@media screen and (max-width: 1024px) {
+  .right {
+    width: 45%;
+  }
+
+  .left {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 4rem;
+    padding-top: 3rem;
+  }
+
+  .left {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .left h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+
+  .details {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .right {
+    width: 70%;
+  }
+
+  .rotate-text {
+    font-size: 2.5rem;
+    left: -14%;
+    bottom: 20%;
+    rotate: -90deg;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    gap: 2rem;
+  }
+
+  .left h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .rotate-text {
+    font-size: 2rem;
+    left: -15%;
+    bottom: 10%;
+    rotate: -90deg;
+  }
+
+  .black-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .black-box h5 {
+    font-size: 1rem;
+  }
+
+  .top h5 {
+    padding-right: 0;
+  }
+}
